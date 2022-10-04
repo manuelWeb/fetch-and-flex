@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import AllPost from './AllPost';
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <AllPost posts={[
+        'posts/1',
+        'posts/2',
+        'posts/3',
+        'posts/4',
+      ]} />
     </div>
   );
 }
