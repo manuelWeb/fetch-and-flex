@@ -31,7 +31,7 @@ const AllPost = ({ posts }) => {
       <ul>
         {postsArray && postsArray.map(({ userId, id, title, body }) => (
           <li key={id}>
-            <h6>{title} </h6>
+            <h6 className='fluide'>{title} </h6>
             <p>
               {body}
             </p>
