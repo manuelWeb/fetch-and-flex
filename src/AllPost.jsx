@@ -40,11 +40,11 @@ const AllPost = ({ posts }) => {
                 {body}
               </p>
             </div>
-            <div className="col d-flex flex-column justify-content-between">
+            <div className="col d-flex justify-content-between flex-wrap align-content-between">
               <div className="name">
                 {postsCommentArray[0][0].name}
               </div>
-              <div className="mail mb-2">
+              <div className="blockquote-footer mail m-0 mb-2">
                 {postsCommentArray[0][0].email}
               </div>
             </div>
