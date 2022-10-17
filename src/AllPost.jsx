@@ -31,20 +31,20 @@ const AllPost = ({ posts }) => {
   return (
     <div>
       <h1>Hello AllPost : </h1>
-      <ul>
+      <ul className='p-0'>
         {postsArray && postsArray.map(({ userId, id, title, body }) => (
-          <li key={id} className="row border-bottom m-4">
+          <li key={id} className="row border-bottom border-top m-0 mb-4">
             <div className="col-8 border-end">
               <h1 className='fluide'>{title} </h1>
               <p className='m-0 mb-2'>
                 {body}
               </p>
             </div>
-            <div className="col d-flex flex-column justify-content-between">
-              <div className="name">
+            <div className="col-4 d-flex justify-content-between flex-wrap align-content-between">
+              <div className="name w-100">
                 {postsCommentArray[0][0].name}
               </div>
-              <div className="mail mb-2">
+              <div className="blockquote-footer mail text-break m-0 mb-2">
                 {postsCommentArray[0][0].email}
               </div>
             </div>
